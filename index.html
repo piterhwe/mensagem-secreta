@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Última Etapa</title>
     <link rel="stylesheet" href="style.css">
-    <link type="image/png" href="https://i.imgur.com/yOMf9aA.png" rel="shortcut icon">
+    <link type="image/png" href="https://i.imgur.com/1RCPhrE.png" rel="shortcut icon">
 </head>
 <body>
     <main class="apresentacao"></main>
@@ -41,7 +41,8 @@
 
         <form>
             <h3 class="login-text" style="color: white;">Confirmação</h3>
-            <input type="text" placeholder="O que você é minha? Xxxx xx Xxxxx Xxxx" id="login" class="login">
+            <input type="text" placeholder="O que você é meu? Xxxx xx Xxxxx Xxxx" id="login" class="login">
+            <input type="text" placeholder="Qual a Criptografia passada?" id="crypto" class="crypto">
             <input type="password" placeholder="Aniversário DD/MM" id="pw" class="pw">
             <button type="submit" placeholder="Enviar" onclick="logar(); return false" class="button-submit" style="background: linear-gradient(0.2turn, red, orange, yellow, rgb(6, 184, 6), rgb(0, 89, 255), indigo, violet);; border-color: white;">Enviar</button>
         </form>
@@ -49,9 +50,10 @@
 
             function logar(){
                 var login = document.getElementById('login').value;
+                var crypto = docuent.getElementById('crypto').value;
                 var pw = document.getElementById('pw').value;
 
-                if(login == "Amor da Minha Vida" && pw == "22/12"){
+                if(login == "Amor da Minha Vida" && pw == "22/12" && crypto == "Espectrograma"){
                     alert('Um último passo.');
                     location.href = "mensagem-secreta.html";
                     
